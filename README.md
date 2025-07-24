@@ -33,3 +33,12 @@ This chatbot remembers previous messages in the session and lets you control the
 ```bash
 git clone https://github.com/your-username/ollama-langchain-chatbot.git
 cd ollama-langchain-chatbot
+
+## 🛠️ Setup Instructions
+
+2. **Create and Activate a Virtual Environment**
+
+```bash
+python -m venv venv
+source venv/bin/activate       # For Windows: venv\Scripts\activate
+
