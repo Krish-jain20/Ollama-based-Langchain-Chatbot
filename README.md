@@ -1,44 +1,75 @@
-# 🧠 Ollama LangChain Memory Chatbot
+🧠 Ollama LangChain Memory Chatbot
 
-A conversational chatbot app built with **Streamlit** and **LangChain**, powered by **Ollama (LLaMA3.2)**, and equipped with memory using LangChain's `ConversationBufferMemory`.
+A conversational AI chatbot built using Streamlit and LangChain, powered by Ollama (LLaMA3.2), and enhanced with conversational memory using ConversationBufferMemory.
 
-This chatbot remembers previous messages in the session and lets you control the tone using a system prompt and temperature slider.
+This chatbot allows users to interact with a locally hosted LLM while preserving conversation history within a session. Users can also adjust the system behavior using temperature and prompt controls.
 
----
+🚀 Features
 
-## 🚀 Features
+💬 Chat interface built with Streamlit
 
-- 💬 Chat interface with memory using LangChain
-- 🧠 Contextual memory powered by `ConversationBufferMemory`
-- ⚙️ Adjustable temperature and system prompt
-- 🔁 Option to reset conversation memory
-- 🦙 Runs with `Ollama` backend (`llama3.2` model)
+🧠 Memory-enabled conversations using LangChain
 
----
+🔁 Reset chat and start over anytime
 
-## 🛠️ Tech Stack
+⚙️ Dynamic system prompt and temperature control
 
-- [Python 3.9+](https://www.python.org/)
-- [Streamlit](https://streamlit.io/)
-- [LangChain](https://www.langchain.com/)
-- [LangChain-Ollama](https://python.langchain.com/docs/integrations/llms/ollama)
-- [Ollama](https://ollama.com/)
+🦙 Uses Ollama with a local model (e.g., llama3.2)
 
----
+🛠️ Tech Stack
 
-## 📦 Installation
+Python 3.9+
 
-1. **Clone this repository**
+Streamlit
 
-```bash
+LangChain
+
+langchain-ollama
+
+Ollama (Local LLM backend)
+
+📦 Installation
+
+1. Clone the Repository
+
 git clone https://github.com/your-username/ollama-langchain-chatbot.git
 cd ollama-langchain-chatbot
 
-## 🛠️ Setup Instructions
+2. Set up a Virtual Environment (Optional but Recommended)
 
-2. **Create and Activate a Virtual Environment**
-
-```bash
 python -m venv venv
-source venv/bin/activate       # For Windows: venv\Scripts\activate
+source venv/bin/activate       # on Windows: venv\Scripts\activate
+
+3. Install Dependencies
+
+pip install -r requirements.txt
+
+
+
+
+
+4. Install and Run Ollama
+
+# Install Ollama (https://ollama.com/download)
+ollama run llama3:instruct     # Or any model like llama3.2
+
+🔁 Make sure the model name used in your code matches the one downloaded.
+
+▶️ How to Run
+
+Once dependencies are installed and Ollama is running:
+
+streamlit run app.py
+
+Replace app.py with your actual filename if it's different.
+
+⚙️ App Usage
+
+Adjust the temperature in the sidebar for more creative or more deterministic responses.
+
+Edit the system prompt to change how the chatbot behaves.
+
+Click 🔄 Reset Chat to clear the memory and start a fresh conversation.
+
+Use the chat input box to converse with the bot in real-time.
 
