@@ -69,3 +69,4 @@ In the Streamlit sidebar:
 In the chat area:
 - 🗨️ Enter any question or prompt.
 - 🧵 The chatbot will respond while remembering prior context from the session.
+<img width="1907" height="843" alt="Image" src="https://github.com/user-attachments/assets/bb4bfbb4-9255-463c-b297-a10af277ab86" />
