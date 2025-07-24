@@ -42,11 +42,7 @@ source venv/bin/activate       # On Windows: venv\Scripts\activate
 ```bash
 pip install -r requirements.txt
 ```
-`requirements.txt` should contain:
-- nginx
-- streamlit
-- langchain
-- langchain-ollama
+
 
 ### 4. Install and run Ollama
 Download Ollama from [https://ollama.com/download](https://ollama.com/download)
